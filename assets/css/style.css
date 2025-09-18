@@ -1,0 +1,110 @@
+/* -------------- Variables -------------- */
+
+:root {
+  --backdark: #121213;
+  --backlight: #ffffff;
+  --textdark: #000000;
+  --textlight: #78d64b;
+}
+
+/* -------------- Global styles -------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--backlight);
+    color: var(--textdark);
+}
+/* -------------- Slider home page -------------- */
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}   
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+/* Nedan följer detta: 5%=1 sekund, Alltså startar på bild 1 i 20% = 4 sekunder, sen byger vi till bild2 under 20-25% vilket är 1 sekund 100% står för bild1 och 200% för bild2*/
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+/* -------------- Navbar section basic style -------------- */
+
+/* ÄNDRA Till att menyn blir hamburger menu när man kommer ner till 500 width */
+
+.header {
+  background-color: var(--backdark);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--textlight);
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: var(--backlight);
+}   
+
+
+/* -------------- Hero section basic style -------------- */
+
+
+
+
+/* -------------- Footer section basic style -------------- */
+
+footer {
+  background-color: var(--backdark);
+  color: var(--textlight);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
