@@ -37,7 +37,7 @@ body {
     width: 20%;
     float: left;
 }
-/* Nedan följer detta: 5%=1 sekund, Alltså startar på bild 1 i 20% = 4 sekunder, sen byger vi till bild2 under 20-25% vilket är 1 sekund. 100% står för bild1 och 200% för bild2*/
+/* Nedan följer detta: 5%=1 sekund, Alltså startar på bild 1 i 20% = 4 sekunder, sen byger vi till bild2 under 20-25% vilket är 1 sekund. -100% står för bild1 och -200% för bild2*/
 @keyframes slider {
     0% {
         left: 0%;
