@@ -13,15 +13,24 @@
 </head>
 <body>
 <header class="header">
-    <div class="logo">
-    <a href="index.html">
+    <div class="left-section">
+    <a class="logo" href="index.html">
       <img src="assets\images\lubalogo.avif" alt="LUBA loga" class="logo-img">
     </a>
   </div>
-  <nav class="nav">
+  <nav class="nav" aria-label="Main Navigation">
     <a href="index.html">Hem</a>
     <a href="product.html">Produkter</a>
     <a href="about.html">Om oss</a>
     <a href="contact.html">Kontakt</a>
   </nav>
+
+  <div class="right-section">
+    <form class="search" role="search">
+      <input type="text" placeholder="Sök..." aria-label="Search">
+      <button type="submit">Sök</button>
+
+    </form>
+
+  </div>
 </header>
