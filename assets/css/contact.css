@@ -1,0 +1,108 @@
+:root{
+  --backdark:#111111;
+  --textlight:#78d64b;
+}
+
+/* Bas */
+* {
+    box-sizing:border-box
+}
+
+html,body{margin:0}
+body{
+    background-color:var(--backdark);
+    color:var(--textlight);
+}
+
+/* Sektion */
+.contact{
+    padding:3rem 1.25rem;
+    max-width:900px;
+    margin:0 auto;
+}
+.contact h1{
+    font-size:2.25rem;
+    line-height:1.2;
+    margin:0 0 0.75rem;
+    text-align:center;
+    margin-bottom: 10rem;
+}
+.contact p{
+    font-size:1.1rem;
+    margin:0 0 2rem;
+    text-align:center;
+    opacity:.9;
+}
+
+.contact-color{
+    color:var(--backlight);
+    
+}
+
+/* Formulär */
+.contact-form {
+    min-width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    background:#1b1b1b;
+    padding:1.25rem;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+.contact-form label {
+    font-weight:700;
+}
+.contact-form input,
+.contact-form textarea {
+    width:100%;
+    padding:.9rem 1rem;
+    border:2px solid var( --accentdark);
+    border-radius:8px;
+    background: var(--backdark);
+    color:var(--backlight);
+    outline:none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--textlight); 
+}
+
+.contact-form button {
+    align-self:flex-start;
+    background:var(--textlight);
+    color:var(--backdark);
+    border:0;
+    padding:.9rem 1.1rem;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:700;
+    transition:transform .06s ease, opacity .2s ease;
+}
+.contact-form button:hover {
+    opacity:.70
+}
+
+.contact-form button:active {
+    transform:translateY(1px)
+}
+
+/* Karta "Lite hjälp av Mandus för att lösa" */ 
+.contact-map {
+    display:flex;
+    gap:1rem;                
+    align-items:stretch;    
+    min-height:360px;
+    padding: 0 4rem;
+}
+
+.contact, .map-wrap {
+    flex:1 1 50%;         
+}
+
+.map-wrap iframe {
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;      
+}

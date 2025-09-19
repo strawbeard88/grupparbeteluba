@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="assets\js\include.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakta oss</title>
+
+  <script src="assets/js/include.js" defer></script>
 </head>
 <body>
     <div id="header-placeholder"></div>
     
+    <div class="contact">
+        <h1>Kontakt</h1>
+        <p>Här nedan kan du kontakta oss på det sätt som bäst passar dig,<br>Vi besvarar alla meddalden via formuläret snarast möjligt,<br>Oftast inom 24 timmar!</p>
+        <p>Telefon: <a class="contact-color" href="tel:+46700000000">+46 70 000 00 00</a></p>
+        <p>Adress: Luba buffel och båg AB<br>Redegatan 1H <br>426 77 Västra Frölunda</p>
+        
+    </div>
+    <section class="contact-map">
+        
+        <form action="https://formsubmit.co/info@devligo.se" method="POST" class="contact-form">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="thanks.html" />
     
-    
-    <section class="kontakt">
-      <h1>Kontakta oss</h1>
-      <p>Har du några som helst funderingar så tveka inte att höra av dig. Du får gärna skicka en förfrågan i formuläret nedan</p>
-
-        <form action="https://formsubmit.co/info@pmcbygg.se" method="POST" class="kontakt-form">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="thanks.html">
-
             <label for="namn">Ditt namn</label>
-            <input type="text" id="namn" name="namn" required />
-
+            <input type="text" id="namn" name="namn" autocomplete="name" required />
+    
             <label for="email">Din e-post</label>
-            <input type="email" id="email" name="email" required />
-
+            <input type="email" id="email" name="email" autocomplete="email" required />
+    
             <label for="telefon">Telefonnummer</label>
-            <input type="tel" id="telefon" name="telefon" required />
-
+            <input type="tel" id="telefon" name="telefon" autocomplete="tel" required />
+    
             <label for="meddelande">Ditt meddelande</label>
             <textarea id="meddelande" name="meddelande" rows="6" required></textarea>
-
+    
             <button type="submit">Skicka</button>
         </form>
-        
+
+        <div class="map-wrap">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=redegatan%201h%20v%C3%A4stra%20fr%C3%B6l%C3%B6unda+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/it/calcola-la-popolazione-su-una-mappa/">Karta till oss</a></iframe>
+        </div>
     </section>
 
 
-  <div id="footer-placeholder"></div>
+
+    <div id="footer-placeholder"></div>
 </body>
 </html>
-
