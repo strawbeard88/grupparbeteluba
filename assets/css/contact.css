@@ -4,16 +4,6 @@ body {
 }
 
 
-.google-map {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  top: 1em;
-  right: 2em;
-  z-index: 1; 
-
-}
-
 
 .contact {
   padding: 3rem 2rem;
