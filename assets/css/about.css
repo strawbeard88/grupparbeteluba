@@ -29,17 +29,23 @@
 }
 
 .goalssection {
-    padding: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.goalsleft{
+.goalsleft {
     padding:3em;
-    background-color: gray;   
+    background-color: gray;
+}
+.goalsleft p, a, h2 {
+    padding: 1em 1em;
 }
 
-.goalsright{
-    padding:3em;
-    background-color:#bbbbbb;
+.goalsright {
+    padding: 3em;
+    background-color: #bbbbbb;
+}
+
+.goalsright p{
+    padding: 0.5em 0em 1em 0em;
 }
