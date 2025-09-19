@@ -3,25 +3,23 @@
     padding:2em;
     display:grid;
     grid-template-columns: auto auto;
-    height:fit-content;
-    column-gap:2em;
+    column-gap:1em;
 }
 .abouttop img{
     width:300px;
     border-radius: 5px;
     box-shadow: 4px 4px 2px #bbbbbb;
 }
-
 .abouttop h1{
-    display:inline-block;
-    max-width: 110%;
+    max-width: 50%;
+    min-width: max-content;
     border-bottom:3px solid black;
 }
-
 .abouttop h5{
     margin-bottom: 2em;    
 }
-
-.span2{
-    grid-column:span 2;
+.aboutquote{
+    margin:2em;
+    font-style: italic;
+    text-align: center;
 }
