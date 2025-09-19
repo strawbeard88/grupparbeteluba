@@ -12,7 +12,6 @@ html,body{margin:0}
 body{
     background-color:var(--backdark);
     color:var(--textlight);
-  /* font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; */
 }
 
 /* Sektion */
@@ -61,7 +60,7 @@ body{
     border:2px solid var( --accentdark);
     border-radius:8px;
     background: var(--backdark);
-    color:#fff;
+    color:var(--backlight);
     outline:none;
 }
 .contact-form input:focus,
@@ -88,22 +87,22 @@ body{
     transform:translateY(1px)
 }
 
-/* Karta */
-.contact-map{
-  display:flex;
-  gap:1rem;                
-  align-items:stretch;    
-  min-height:360px;
+/* Karta "Lite hjälp av Mandus för att lösa" */ 
+.contact-map {
+    display:flex;
+    gap:1rem;                
+    align-items:stretch;    
+    min-height:360px;
     padding: 0 4rem;
 }
 
-.contact, .map-wrap{
-  flex:1 1 50%;         
+.contact, .map-wrap {
+    flex:1 1 50%;         
 }
 
-.map-wrap iframe{
-  width:100%;
-  height:100%;
-  border:0;
-  display:block;      
+.map-wrap iframe {
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;      
 }
