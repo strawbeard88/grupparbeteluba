@@ -1,38 +1,45 @@
-.abouttop{
-    margin: 2em 9em;
-    padding:2em;
-    display:grid;
-    grid-template-columns: auto auto;
-    column-gap:1em;
+.abouttop {
+            /* sätta in någon bakgrund? */
+    margin: 6em 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-width: 900px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1em;
 }
-.abouttop img{
-    width:300px;
+.abouttop img {
+    width: 400px;
     border-radius: 5px;
     box-shadow: 4px 4px 2px #bbbbbb;
 }
-.abouttop h1{
-    max-width: 50%;
-    min-width: max-content;
-    border-bottom:3px solid black;
+.abouttop h1 {
+    border-bottom: 3px solid black;
+    text-align: center;  
 }
-.abouttop h5{
-    margin-bottom: 2em;    
+.abouttop h5 {
+    margin-bottom: 2em;
+    text-align: center;    
 }
-.aboutquote{
-    margin:2em;
+
+.aboutquote {
+    margin: 2em;
     font-style: italic;
     text-align: center;
 }
 
-.aboutgoals{
-    background-color: var(--backdark);
-    color: var(--textlight);
-    text-align:center;
-    display:grid;
-    grid-template-columns: repeat(3, auto);
-    border:3px dotted hotpink;
+.goalssection {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.span3{
-    grid-column: 1 /span 3;
+.goalsleft{
+    padding:3em;
+    background-color: gray;   
+}
+
+.goalsright{
+    padding:3em;
+    background-color:#bbbbbb;
 }

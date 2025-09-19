@@ -5,6 +5,8 @@
   --backlight: #ffffff;
   --textdark: #000000;
   --textlight: #78d64b;
+  --accentlightdark: #2e2e2e;
+  --accentdark: #1b1b1b;
 }
 
 /* -------------- Global styles -------------- */
