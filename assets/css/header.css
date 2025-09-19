@@ -49,6 +49,7 @@
 .right-section input {
   padding: 0.5rem;
   border: 4px solid var(--accentdark);
+  color: var(--backlight);
   border-radius: 10px;
   outline: none;
   width: 200px;
