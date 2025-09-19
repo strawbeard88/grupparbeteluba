@@ -23,3 +23,16 @@
     font-style: italic;
     text-align: center;
 }
+
+.aboutgoals{
+    background-color: var(--backdark);
+    color: var(--textlight);
+    text-align:center;
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    border:3px dotted hotpink;
+}
+
+.span3{
+    grid-column: 1 /span 3;
+}
